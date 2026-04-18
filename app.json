@@ -1,0 +1,19 @@
+{
+  "expo": {
+    "name": "vision-camera-skia-repro",
+    "slug": "vision-camera-skia-repro",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "newArchEnabled": true,
+    "ios": {
+      "bundleIdentifier": "com.repro.visioncameraskia",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Camera access required to reproduce SkiaCamera bug."
+      }
+    },
+    "android": {
+      "package": "com.repro.visioncameraskia",
+      "permissions": ["android.permission.CAMERA"]
+    }
+  }
+}
