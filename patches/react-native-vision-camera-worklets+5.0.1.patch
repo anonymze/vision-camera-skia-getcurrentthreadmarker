@@ -1,0 +1,11 @@
+diff --git a/node_modules/react-native-vision-camera-worklets/src/getCurrentThreadMarker.ts b/node_modules/react-native-vision-camera-worklets/src/getCurrentThreadMarker.ts
+index 0000000..0000001 100644
+--- a/node_modules/react-native-vision-camera-worklets/src/getCurrentThreadMarker.ts
++++ b/node_modules/react-native-vision-camera-worklets/src/getCurrentThreadMarker.ts
+@@ -1,5 +1,6 @@
+ import { HybridWorkletQueueFactory } from './internal/HybridWorkletQueueFactory'
+ 
+ export function getCurrentThreadMarker(): number {
++  "worklet";
+   return HybridWorkletQueueFactory.getCurrentThreadMarker()
+ }

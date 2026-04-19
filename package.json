@@ -6,7 +6,8 @@
     "start": "expo start --dev-client",
     "android": "expo run:android",
     "ios": "expo run:ios",
-    "prebuild": "expo prebuild --clean"
+    "prebuild": "expo prebuild --clean",
+    "postinstall": "patch-package"
   },
   "dependencies": {
     "expo": "55.0.8",
@@ -23,7 +24,8 @@
   },
   "devDependencies": {
     "@types/react": "~19.1.0",
-    "typescript": "~5.9.2"
+    "typescript": "~5.9.2",
+    "patch-package": "^8.0.0"
   },
   "pnpm": {
     "onlyBuiltDependencies": [

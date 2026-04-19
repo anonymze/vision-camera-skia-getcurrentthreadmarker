@@ -1,4 +1,9 @@
-import { View } from 'react-native';
+// remove the `'use no memo'` directive below to reproduce the React Compiler `_temp` crash.
+// with it: SkiaCamera renders normally.
+// without it: `[Worklets] Tried to synchronously call a non-worklet function _temp on the UI thread`.
+'use no memo';
+
+import { StyleSheet, View } from 'react-native';
 import {
   useCameraDevice,
   useCameraPermission,
@@ -17,7 +22,7 @@ export default function App() {
 
   return (
     <SkiaCamera
-      style={{ flex: 1 }}
+      style={StyleSheet.absoluteFill}
       device={device}
       isActive={true}
       onFrame={(frame, render) => {
