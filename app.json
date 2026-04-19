@@ -5,6 +5,9 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "newArchEnabled": true,
+    "experiments": {
+      "reactCompiler": true
+    },
     "ios": {
       "bundleIdentifier": "com.repro.visioncameraskia",
       "infoPlist": {
